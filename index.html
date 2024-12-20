@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Cart(10)</a>
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input id="search-input" class="form-control me-2" type="search" placeholder="Search Product" aria-label="Search" />
+            <button id="search-button" class="btn btn-outline-success" type="button">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div style="height: 600px;" class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img style="height: 100%;"
+              src="https://media.istockphoto.com/id/1462954720/photo/cosmetic-brown-bottles-beauty-blogger-salon-therapy-branding-mockup.jpg?s=2048x2048&w=is&k=20&c=lsztnKp-V36lrLVAG_Am-QCemawig7sGWg38jOVBqy0="
+              class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_1280.jpg" class="d-block w-100"
+              alt="Image 2">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://cdn.pixabay.com/photo/2020/04/25/09/10/cosmetics-5090011_1280.jpg" class="d-block w-100"
+              alt="Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="products">
+        <div class="product-list">
+          <div class="container">
+            <h1>Products</h1>
+            <div id="productList" class="row productList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
